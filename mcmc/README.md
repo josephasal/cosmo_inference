@@ -1,8 +1,7 @@
 File containing all the code for the MCMC implementation.
 
-mcmc_algorithm has the core bayesian functions and the mcmc function  
-run_mcmc is a runner file that imports the algorithm and is used to call the function  
-adaptive_mcmc_algorithm is an improvement on mcmc_algorithm that uses and adaptive algorithm to get a desired acceptance rate  
-convergence_diagnostics has a function for the gelman rubin diagnostic and effective sample size
-
+mcmc_functions contains all the code for the prior, likelihood, basic and adaptive mcmc, autocorrelation, gelman rubin, effective sample size
+run_mcmc is the code of me running the mcmcs and generating trace plots, stats and corner plots of each mcmc
+tuning_mcmc is me tuning the adaptive mcmc to the best paramaters to use to give the largest effect sample size by using 27 pilot runs
+adaptive_mcmc_results_final is a pickle file containing all the stats of the pilot runs so that i do not have to run it again
 
