@@ -1,4 +1,4 @@
 # Cosmological Parameter inference using MCMC and Nerual Networks
 * This project uses both MCMC and NNs to infer cosmological parameters from the Lambda CDM model. The main parameters it estimates are dimensionless Hubble constant (h) and the matter density (omega m)
 * The MCMC is done using the Metropolis Hastings algorithm and I have introduced various optimisations such as multiple walkers and an adaptive sapling algorithm to ensure a more robust sampling method.
-* The neural network is trained on simulated data and is then used to predict h and omega m
+* The neural network is trained on simulated data and is then used to predict h and omega m. Firstly, a grid search was run to find the layer and neuron number that gave the lowest loss. This was then fine tuned by varying learning rate, regularisation strength and adding dropout. An ensemble of 10 neural networks with these parameters was made and ran to give a prediction on h and omega m as well as the resepctive error.
